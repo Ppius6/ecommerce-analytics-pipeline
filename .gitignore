@@ -1,0 +1,99 @@
+# ============================================
+# E-COMMERCE DATA PIPELINE .GITIGNORE
+# ============================================
+
+# ==========================================
+# DOCKER & DATA VOLUMES
+# ==========================================
+# Docker volumes (contains database data)
+postgres-db-volume/
+clickhouse-data/
+
+# Environment files with passwords
+.env
+.env.local
+
+# ==========================================
+# AIRFLOW
+# ==========================================
+# Airflow logs and runtime files
+logs/
+*.log
+*.pid
+airflow.db
+airflow.cfg
+webserver_config.py
+standalone_admin_password.txt
+
+# ==========================================
+# DBT
+# ==========================================
+# dbt generated files
+dbt_project/logs/
+dbt_project/target/
+dbt_project/dbt_packages/
+dbt_project/profiles.yml
+
+# ==========================================
+# DATA FILES
+# ==========================================
+# Raw CSV data files (contains customer data)
+data/
+*.csv
+*.xlsx
+*.json
+
+# Database dumps
+*.sql
+*.dump
+
+# ==========================================
+# INIT SCRIPTS
+# ==========================================
+# May contain sensitive setup data
+init_scripts/
+
+# ==========================================
+# PYTHON
+# ==========================================
+__pycache__/
+*.py[cod]
+*.pyc
+.pytest_cache/
+.coverage
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# ==========================================
+# IDE & EDITORS
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==========================================
+# OPERATING SYSTEM
+# ==========================================
+.DS_Store
+Thumbs.db
+*~
+
+# ==========================================
+# TEMPORARY FILES
+# ==========================================
+*.tmp
+*.temp
+*.bak
+
+# ==========================================
+# KEEP THESE IMPORTANT FILES
+# ==========================================
+!docker-compose.yml
+!dags/
+!dbt_project/models/
+!dbt_project/dbt_project.yml
+!README.md
