@@ -8,7 +8,6 @@ Build a complete data pipeline that transforms raw e-commerce data into analytic
 
 - **Docker & Docker Compose** - Containerized infrastructure
 - **Apache Airflow** - Workflow orchestration and scheduling
-- **dbt (Data Build Tool)** - SQL transformations and data modeling
 - **PostgreSQL** - Staging database for raw data
 - **ClickHouse** - Analytics database for transformed data
 - **Python** - Data generation and processing scripts
